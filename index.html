@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curiosidade sobre Tecnologia</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e8f0fe;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1a73e8;
+        }
+
+        .mensagem {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        .botao {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Curiosidade sobre Tecnologia</h1>
+
+    <p class="mensagem">
+        Clique no botão para descobrir uma curiosidade!
+    </p>
+
+    <button class="botao">Mostrar curiosidade</button>
+
+    <script>
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        function mostrarMensagem() {
+            mensagem.textContent = "A primeira página da Web foi criada por Tim Berners-Lee em 1991!";
+        }
+
+        botao.addEventListener("click", mostrarMensagem);
+    </script>
+
+</body>
+</html>
